@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #eee;
+    /* background: linear-gradient(180deg, hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%)100%); */
+}
+
+.box-container {
+    display: flex;
+    background-color: azure;
+    height: 350px;
+    border-radius: 5%;
+    /*reponsive na habay <3*/
+    box-shadow: 10px 10px 137px -18px rgba(212, 42, 212, 1);
+}
+
+.box {
+    background: wheat;
+    background: linear-gradient(180deg, hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%)100%);
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    color: white;
+    border-radius: 5%;
+}
+
+.box .circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(0deg, hsl(252, 100%, 67%) 0%, hsl(241, 74%, 40%)100%);
+}
+
+.box-container .summary {
+    gap: 10px;
+    padding: 20px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.summary .red {
+    align-items: center;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 87, 87, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.summary .red .reaction {
+    display: flex;
+    gap: 5px;
+    color: red;
+}
+
+.summary .yellow {
+    align-items: center;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 176, 31, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.summary .yellow .memory {
+    display: flex;
+    gap: 5px;
+    color: yellow;
+}
+
+.summary .green {
+    align-items: center;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 189, 145, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.summary .green .verbal {
+    display: flex;
+    gap: 5px;
+    color: greenyellow;
+}
+
+.summary .blue {
+    align-items: center;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(17, 37, 212, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.summary .blue .visual {
+    display: flex;
+    gap: 5px;
+    color: blue;
+}
+
+.summary button {
+    width: 100%;
+    display: block;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    padding: 15px;
+    border-radius: 50px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: 0;
+    transition: all .3s ease-in-out;
+}
+
+.summary button:hover {
+    background-color: gray;
+}
+
+p {
+    font-weight: 200 !important;
+}
